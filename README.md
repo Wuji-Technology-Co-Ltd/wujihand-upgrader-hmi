@@ -62,7 +62,7 @@ Debian 包提供系统级安装，适合需要集成到系统菜单的用户。
 
 #### 下载
 下载对应版本的 .deb 文件：
-- GitHub Releases：https://github.com/Wuji-Technology-Co-Ltd/wujihand-upgrader-hmi/releases/download/v1.3.2/wujihand-upgrader_1.3.2_amd64.deb
+- GitHub Releases：https://github.com/Wuji-Technology-Co-Ltd/wujihand-upgrader-hmi/releases
 
 #### 安装步骤
 
