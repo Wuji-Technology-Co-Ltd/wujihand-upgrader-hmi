@@ -54,7 +54,7 @@ sudo dpkg -r wujihand-upgrader
    ```bash
    # 安装必要的依赖
    sudo apt update
-   sudo apt install libtbb2 libtbb-dev -y
+   sudo apt install libtbb2 libtbb-dev libtbb12 -y
    ```
 ---
 
