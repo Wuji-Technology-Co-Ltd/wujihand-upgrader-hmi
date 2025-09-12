@@ -21,12 +21,12 @@ Debian 包提供系统级安装，适合需要集成到系统菜单的用户。�
 
 1. **下载 .deb 文件**
    ```bash
-   wget https://github.com/Wuji-Technology-Co-Ltd/wujihand-upgrader-hmi/releases/download/v2.0.0/wujihand-upgrader_2.0.0_amd64.deb
+   wget https://github.com/Wuji-Technology-Co-Ltd/wujihand-upgrader-hmi/releases/download/v2.1.0/wujihand-upgrader_2.1.0_amd64.deb
    ```
 
 2. **使用 dpkg 安装应用程序**
    ```bash
-   sudo dpkg -i wujihand-upgrader_2.0.0_amd64.deb
+   sudo dpkg -i wujihand-upgrader_2.1.0_amd64.deb
    # 如遇依赖问题可执行
    sudo apt-get install -f
    ```
