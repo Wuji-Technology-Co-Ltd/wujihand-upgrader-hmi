@@ -14,19 +14,15 @@ Wuji HMI 应用程序 - 用于机器人灵巧手升级的桌面应用
 Debian 包提供系统级安装，适合需要集成到系统菜单的用户。安装后会自动配置串口权限和用户组。
 
 #### 下载
-下载对应版本的 .deb 文件：
+下载最新对应版本的 .deb 文件：
 - GitHub Releases：https://github.com/Wuji-Technology-Co-Ltd/wujihand-upgrader-hmi/releases
 
 #### 安装步骤
 
-1. **下载 .deb 文件**
+1. **使用 dpkg 安装应用程序**
+   注意：将 <downloaded-latest-package-name> 替换为实际下载的软件包名称。
    ```bash
-   wget https://github.com/Wuji-Technology-Co-Ltd/wujihand-upgrader-hmi/releases/download/v2.1.0/wujihand-upgrader_2.1.0_amd64.deb
-   ```
-
-2. **使用 dpkg 安装应用程序**
-   ```bash
-   sudo dpkg -i wujihand-upgrader_2.1.0_amd64.deb
+   sudo dpkg -i <downloaded-latest-package-name>.deb
    # 如遇依赖问题可执行
    sudo apt-get install -f
    ```
