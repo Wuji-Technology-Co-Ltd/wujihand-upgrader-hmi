@@ -19,7 +19,7 @@ Debian 包提供系统级安装，适合需要集成到系统菜单的用户。�
 
 #### 安装步骤
 
-1. **使用 dpkg 安装应用程序**
+1. **使用 apt 安装应用程序**
    注意：将 <downloaded-latest-package-name> 替换为实际下载的软件包名称。
    ```bash
    sudo apt install ./<downloaded-latest-package-name>.deb
