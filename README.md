@@ -4,7 +4,7 @@ Wuji HMI 应用程序 - 用于机器人灵巧手升级的桌面应用
 
 ## 系统要求
 
-- **操作系统**: Linux (Ubuntu 18.04+)
+- **操作系统**: Linux (Ubuntu 20.04+)
 - **架构**: x86_64 (AMD64)
 
 ## 安装方式
@@ -22,7 +22,7 @@ Debian 包提供系统级安装，适合需要集成到系统菜单的用户。�
 1. **使用 dpkg 安装应用程序**
    注意：将 <downloaded-latest-package-name> 替换为实际下载的软件包名称。
    ```bash
-   sudo dpkg -i <downloaded-latest-package-name>.deb
+   sudo apt install ./<downloaded-latest-package-name>.deb
    # 如遇依赖问题可执行
    sudo apt-get install -f
    ```
@@ -39,29 +39,17 @@ Debian 包提供系统级安装，适合需要集成到系统菜单的用户。�
 
 #### 时序要求
 固件升级时，需要满足以下时序：
-1. 灵巧手处于断电状态，先打开wuji hmi应用程序
+1. 灵巧手处于断电状态，先打开wujihand-upgrader应用程序
 2. 灵巧手先通过USB连接到PC，然后再给灵巧手通电
-3. wuji hmi会自动连接到灵巧手引导程序
+3. wujihand-upgrader会自动连接到灵巧手引导程序
 4. 正常连接后可进行固件升级操作
 
 **注意**：若连接后提示当前不处于引导程序，需要重新给灵巧手上电
 
 #### 卸载
 ```bash
-sudo dpkg -r wujihand-upgrader
+sudo apt remove wujihand-upgrader
 ```
-
-## 故障排除
-
-### 常见问题
-
-1. **依赖缺失错误**
-   ```bash
-   # 安装必要的依赖
-   sudo apt update
-   sudo apt install libtbb2 libtbb-dev libtbb12 -y
-   ```
----
 
 **注意**: 首次运行可能需要较长时间来解压和初始化应用程序。请耐心等待。
 
